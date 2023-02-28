@@ -39,6 +39,11 @@ ggplot(choco,aes(x = Rating)) + geom_histogram(binwidth=0.25)
 This distribution is bimodal, with modes around 2.75 and 3.5. It is not symmetric and has a slight skew to the right. There are potential outliers at 1, 1.5, and 5. 
 
 2. Do ratings depend on the cocoa percentage of a chocolate bar?
+```{r}
+ggplot(data=choco, aes(x=Cocoa.Pct, y = Rating)) + geom_jitter()
+```
+
+There is no clear pattern in the scatterplot that indicates a relationship/correlation between cocoa percentage and rating.
 
 3. How do ratings compare across different company locations? Focus on the three locations with the most ratings:
 
