@@ -28,3 +28,16 @@ ggplot(data=choco,aes(x=Review.Date)) + geom_bar(aes(weight=Rating))
 ```
 
 From 2006 to 2015, the barchart shows a steady increase in number of ratings each year. 2016 through 2017, the last couple years of testing, show a decrease.
+
+# Question Set 2
+
+1. How are ratings distributed? Draw a histogram of ratings and describe it. Don’t forget to mention outliers, if there are any.
+
+2. Do ratings depend on the cocoa percentage of a chocolate bar?
+
+3. How do ratings compare across different company locations? Focus on the three locations with the most ratings:
+
+```{r}
+<- dplyr::filter(choco, Company.Location %in% c("U.S.A.", "France", "Canada"))
+```
+
