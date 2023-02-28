@@ -1,0 +1,7 @@
+---
+title: "HW5"
+author: "Alison Wyatt and Kylie Knudten"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
