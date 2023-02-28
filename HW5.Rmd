@@ -43,6 +43,7 @@ This distribution is bimodal, with modes around 2.75 and 3.5. It is not symmetri
 3. How do ratings compare across different company locations? Focus on the three locations with the most ratings:
 
 ```{r}
-<- dplyr::filter(choco, Company.Location %in% c("U.S.A.", "France", "Canada"))
+locations <- dplyr::filter(choco, Company.Location %in% c("U.S.A.", "France", "Canada"))
+ggplot(locations, aes(x = Rating, y = Company.Location)) + geom_boxplot()
 ```
-
+All three locations have a similar mean around 3.25 and the same maximum value of 4, but the US and France have the lowest ratings recorded, at 1.5. France has the smallest range between the maximum and minimum values, excluding outliers. Canada has the largest value at the 75% quartile at 3.75. 
