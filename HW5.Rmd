@@ -6,6 +6,7 @@ output: pdf_document
 ---
 
 ```{r}
+library(ggplot2)
 choco <- read.csv("https://ds202-at-isu.github.io/labs/data/choco.csv")
 head(choco)
 ```
@@ -20,3 +21,10 @@ mean(choco$Rating)
 There are a total of 1,852 chocolate bars rated, with an average rating of 3.19. 
 
 2. How does the number of ratings depend on the year? Draw a bar chart of the number of reports.
+
+```{r}
+choco$Review.Date <- factor(choco$Review.Date)
+ggplot(data=choco,aes(x=Review.Date)) + geom_bar(aes(weight=Rating))
+```
+
+From 2006 to 2015, the barchart shows a steady increase in number of ratings each year. 2016 through 2017, the last couple years of testing, show a decrease.
