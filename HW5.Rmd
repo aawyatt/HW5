@@ -52,3 +52,11 @@ locations <- dplyr::filter(choco, Company.Location %in% c("U.S.A.", "France", "C
 ggplot(locations, aes(x = Rating, y = Company.Location)) + geom_boxplot()
 ```
 All three locations have a similar mean around 3.25 and the same maximum value of 4, but the US and France have the lowest ratings recorded, at 1.5. France has the smallest range between the maximum and minimum values, excluding outliers. Canada has the largest value at the 75% quartile at 3.75. 
+
+# Individual questions 
+
+## Kylie's question:
+How do ratings compare across different broad bean origins?
+
+## Alison's question: 
+How does cocoa percentage vary across different broad bean origins?
