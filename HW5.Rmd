@@ -9,6 +9,8 @@ output: pdf_document
 choco <- read.csv("https://ds202-at-isu.github.io/labs/data/choco.csv")
 head(choco)
 ```
+# Question Set 1
+
 1. What is the overall number of chocolate bars rated?
 
 ```{r}
@@ -16,3 +18,5 @@ str(choco)
 mean(choco$Rating)
 ```
 There are a total of 1,852 chocolate bars rated, with an average rating of 3.19. 
+
+2. How does the number of ratings depend on the year? Draw a bar chart of the number of reports.
