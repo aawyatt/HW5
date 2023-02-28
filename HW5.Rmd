@@ -5,3 +5,8 @@ date: "`r Sys.Date()`"
 output: pdf_document
 ---
 
+```{r}
+choco <- read.csv("https://ds202-at-isu.github.io/labs/data/choco.csv")
+head(choco)
+```
+
