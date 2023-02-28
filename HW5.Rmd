@@ -36,6 +36,7 @@ From 2006 to 2015, the barchart shows a steady increase in number of ratings eac
 ```{r}
 ggplot(choco,aes(x = Rating)) + geom_histogram(binwidth=0.25)
 ```
+This distribution is bimodal, with modes around 2.75 and 3.5. It is not symmetric and has a slight skew to the right. There are potential outliers at 1, 1.5, and 5. 
 
 2. Do ratings depend on the cocoa percentage of a chocolate bar?
 
