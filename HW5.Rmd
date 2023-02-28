@@ -33,6 +33,10 @@ From 2006 to 2015, the barchart shows a steady increase in number of ratings eac
 
 1. How are ratings distributed? Draw a histogram of ratings and describe it. Don’t forget to mention outliers, if there are any.
 
+```{r}
+ggplot(choco,aes(x = Rating)) + geom_histogram(binwidth=0.25)
+```
+
 2. Do ratings depend on the cocoa percentage of a chocolate bar?
 
 3. How do ratings compare across different company locations? Focus on the three locations with the most ratings:
