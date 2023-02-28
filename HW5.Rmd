@@ -59,4 +59,9 @@ All three locations have a similar mean around 3.25 and the same maximum value o
 How do ratings compare across different broad bean origins?
 
 ## Alison's question: 
-How does cocoa percentage vary across different broad bean origins?
+Is there a relationship between REF and cocoa pct.?
+
+```{r}
+ggplot(data=choco, aes(x=Cocoa.Pct, y = REF)) + geom_jitter()
+```
+There doesn't seem to be a relationship between REF and cocoa percentage. The lowest cocoa percentage is around 40% and has an REF value of around 1100. The highest cocoa value, of 100%, has REF values that range from around 100 to 1750. There is no linear relationship, positive or negative. 
