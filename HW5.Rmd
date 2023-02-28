@@ -57,7 +57,14 @@ All three locations have a similar mean around 3.25 and the same maximum value o
 # Individual questions 
 
 ## Kylie's question:
-How do ratings compare across different broad bean origins?
+How do cocoa percentages compare across the 3 company locations with the most ratings?
+
+```{r}
+locations <- dplyr::filter(choco, Company.Location %in% c("U.S.A.", "France", "Canada"))
+ggplot(locations, aes(x=Cocoa.Pct,y=Company.Location)) + geom_boxplot()
+```
+
+The three company locations with the most ratings, U.S.A, France, and Canada, have slightly different means. USA and Canada have a similar mean around 70%, while France's mean is around 73-74%. USA has the largest amount of outliers on either side of the quantile function, giving it the largest overall range of values. France has the largest amount of ratings within its 25th and 75th quantiles, while USA and Canada stay fairly similar.
 
 ## Alison's question: 
 Is there a relationship between REF and cocoa pct.?
