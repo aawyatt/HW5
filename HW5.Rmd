@@ -4,6 +4,7 @@ author: "Alison Wyatt and Kylie Knudten"
 date: "`r Sys.Date()`" 
 output: pdf_document
 ---
+Github link: https://github.com/aawyatt/Lab-2
 
 ```{r}
 library(ggplot2)
@@ -65,3 +66,6 @@ Is there a relationship between REF and cocoa pct.?
 ggplot(data=choco, aes(x=Cocoa.Pct, y = REF)) + geom_jitter()
 ```
 There doesn't seem to be a relationship between REF and cocoa percentage. The lowest cocoa percentage is around 40% and has an REF value of around 1100. The highest cocoa value, of 100%, has REF values that range from around 100 to 1750. There is no linear relationship, positive or negative. 
+
+# Workflow reflection
+The workflow was really good for this homework. We divided up the questions and were each able to work on the same R markdown file to complete our own sections. After we did each part, we committed our changes, pulled our partners changes, and then pushed our personal changes. We were able to get it done quickly as we were working on the same document. We also didn't need to have a lot of outside communication because we had divided the problems and could see each others work. 
